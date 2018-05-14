@@ -14,15 +14,15 @@
         "48": "images/icon48.png",
         "128": "images/icon128.png"
     },
-    "browser_action": {
+    "browser_action": {                 //** it shows the icons in the right of Address Coloumn.
         "default_icon": {
             "19": "images/icon19.png",
             "38": "images/icon38.png"
         },
         "default_title": "Extension Title",
-        "default_popup": "popup.html"
+        "default_popup": "popup.html"   //** The operations of icons' doing.
     },
-    "page_action": {
+    "page_action": {                    //** it shows the icons in the url coloumn.
         "default_icon": {
             "19": "images/icon19.png",
             "38": "images/icon38.png"
@@ -32,7 +32,7 @@
     },
     "background": {
         "scripts": ["background.js"]           //** JavaScript need store in different directory with JSON or HTML.
-    },
+    },                                          //** It will change the background's color.
     "content_scripts": [
         {
             "matches": ["http://www.google.com/*"],
